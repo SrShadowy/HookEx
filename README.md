@@ -24,6 +24,7 @@ Seu proposito é simples;
 [WHICH IS]
 
 HookEX as its name says is a "hook" hook for external processes with its x86 architecture (32bits)
+
 [WHAT HE DOES]
 
 Its purpose is simple;
