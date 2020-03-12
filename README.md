@@ -6,7 +6,9 @@ HookEX como seu proprio nome diz é um "hook" gancho para processos externos com
 [OQUE ELE FAZ]
 Seu proposito é simples;
 *Criar um espaço na memoria de um processo externo
+
 *Escrever um salto na memoria em tempo de execução
+
 *Escrever no espaço alocado, uma função.
 
 (ENG)
