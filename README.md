@@ -1,10 +1,16 @@
 # HookEx_x86
 
 (PT-BR)
+
 [OQUE É]
+
+
 HookEX como seu proprio nome diz é um "hook" gancho para processos externos com sua arquitetura x86 (32bits)
 [OQUE ELE FAZ]
+
+
 Seu proposito é simples;
+
 *Criar um espaço na memoria de um processo externo
 
 *Escrever um salto na memoria em tempo de execução
