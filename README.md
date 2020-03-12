@@ -6,6 +6,8 @@
 
 
 HookEX como seu proprio nome diz é um "hook" gancho para processos externos com sua arquitetura x86 (32bits)
+
+
 [OQUE ELE FAZ]
 
 
@@ -20,8 +22,10 @@ Seu proposito é simples;
 (ENG)
 
 [WHICH IS]
+
 HookEX as its name says is a "hook" hook for external processes with its x86 architecture (32bits)
 [WHAT HE DOES]
+
 Its purpose is simple;
 * Create a space in the memory of an external process
 * Write a jump in memory at run time
