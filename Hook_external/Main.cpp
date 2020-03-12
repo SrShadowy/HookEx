@@ -97,6 +97,7 @@ int main()
 		std::cout << "\nNot hook\n";
 
 	/*End*/
+	CloseHandle(p_handle);
 	std::cout << "Press any ENTER or close the window\n";
 	std::cin.get();
 	return 0;
