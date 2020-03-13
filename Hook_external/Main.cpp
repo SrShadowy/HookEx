@@ -1,10 +1,10 @@
 #include <iostream>
 #include <Windows.h>
 
-byte function[] = { 0xC7, 0x04, 0xBD, 0xE8, 0x2A, 0x56, 0x00, 0x05, 0x00, 0x00, 0x00, 0xE9, 0xFF, 0xFF, 0xFF, 0xFF };
 
 
-bool hook_x86(const HANDLE p_handle, const DWORD address_hook, const int nop, byte* function)
+
+bool hook_x86(const HANDLE p_handle, const unsigned long address_hook, const int nop)
 {
 	if (!p_handle || p_handle == INVALID_HANDLE_VALUE)
 	{
@@ -12,7 +12,7 @@ bool hook_x86(const HANDLE p_handle, const DWORD address_hook, const int nop, by
 		return false;
 	}
 	/*Byte function*/
-	
+	byte function[] = { 0xC7, 0x04, 0xBD, 0xE8, 0x2A, 0x56, 0x00, 0x05, 0x00, 0x00, 0x00, 0xE9, 0xFF, 0xFF, 0xFF, 0xFF };
 	/*Address of hook function*/
 	auto address = reinterpret_cast<unsigned long>( VirtualAllocEx(p_handle, nullptr, 2048, MEM_COMMIT, PAGE_EXECUTE_READWRITE));
 	/*Address of back to original function*/
@@ -158,7 +158,7 @@ int main()
 	 */
 	
 	if (hook_x64(p_handle, 0x7FF746843604, 8))
-		std::cout << "\Gotcha!! HOOK\n";
+		std::cout << "\nGotcha!! HOOK\n";
 	else
 		std::cout << "\nNot hook\n";
 
