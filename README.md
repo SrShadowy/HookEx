@@ -1,4 +1,4 @@
-# HookEx_x86
+# HookEx
 
 (PT-BR)
 
